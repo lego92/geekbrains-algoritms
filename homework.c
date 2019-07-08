@@ -71,7 +71,7 @@ void ageGuru(int age)
 // определяет одного цвета поля шахматной доски или нет
 int isSameColor(int x1, int y1, int x2, int y2)
 {
-	if((((x1 + y1) % 2 == 0) && ((x2 + y2) % 2 == 0)) || (((x1 + y1) % 2 != 0) && ((x2 + y2) % 2 != 0))) return 1;
+	if((x1+y1) % 2 == (x2+y2) % 2) return 1;
 	else return 0;
 }
 
